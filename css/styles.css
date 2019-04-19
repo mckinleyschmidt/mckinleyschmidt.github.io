@@ -36,7 +36,7 @@ h1, h2, h3{
 	padding: 45px 10px 30px;
 }
 
-span{
+h1 span{
 	padding: 40px;
 	color: #d60024;
 	background-image: radial-gradient(#ffffff, #ffffff, #fff5f5, transparent);
@@ -115,6 +115,47 @@ a.skip-to-main:focus{
   background-color: #9e001a;
 }
 
+/*callouts*/
+.callout {
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
+  margin-left: 20px;
+  max-width: 300px;
+  border: 2px solid #d60024;
+  animation: moveUp 3s;
+}
+.callout-header {
+  padding: 25px 15px;
+  background: #d60024;
+  font-size: 30px;
+  color: white;
+}
+.callout-container {
+  padding: 15px;
+  background-color: #fff5f5;
+  color: #d60024;
+}
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+.closebtn:hover {
+  color: lightgrey;
+}
+@keyframes moveUp {
+  0% {
+    transform: translate(0px, 200px);    
+  }
+  100% {
+    transform: translate(0px, 0);
+  }
+}
+
 .fp-img{
 	display: block;
 	margin-left: auto;
@@ -169,7 +210,7 @@ a.skip-to-main:focus{
 		padding: 10%;
 	}
 
-	span{
+	h1 span{
 		padding: 50px;
 	}
 
