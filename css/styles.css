@@ -129,7 +129,7 @@ a.skip-to-main:focus{
   transition: 0.4s;
 }
 
-.accordion .active {
+.accordion:focus {
   background-color: #9e001a;
 }
 
