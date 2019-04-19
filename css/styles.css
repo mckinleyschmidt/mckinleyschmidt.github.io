@@ -149,7 +149,7 @@ a.skip-to-main:focus{
 }
 @keyframes moveUp {
   0% {
-    transform: translate(0px, 200px);    
+    transform: translate(0px, 100px);    
   }
   100% {
     transform: translate(0px, 0);
