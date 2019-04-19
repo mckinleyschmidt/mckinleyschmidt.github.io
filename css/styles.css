@@ -121,31 +121,32 @@ a.skip-to-main:focus{
   bottom: 0px;
   right: 20px;
   margin-left: 20px;
-  max-width: 300px;
+  max-width: 150px;
   border: 2px solid #d60024;
   animation: moveUp 3s;
 }
 .callout-header {
   padding: 25px 15px;
   background: #d60024;
-  font-size: 30px;
+  font-size: 10px;
   color: white;
 }
 .callout-container {
   padding: 15px;
   background-color: #fff5f5;
   color: #d60024;
+  font-size: 10px;
 }
 .closebtn {
   position: absolute;
   top: 5px;
   right: 15px;
   color: white;
-  font-size: 30px;
+  font-size: 15px;
   cursor: pointer;
 }
 .closebtn:hover {
-  color: lightgrey;
+  color: #fff5f5;
 }
 @keyframes moveUp {
   0% {
@@ -239,6 +240,21 @@ a.skip-to-main:focus{
 		display: none;
 	}
 
+	/*callouts*/
+	.callout {
+	  max-width: 200px;
+	}
+	.callout-header {
+	  font-size: 20px;
+	}
+	.callout-container {
+	  padding: 15px;
+	  font-size: 15px;
+	}
+	.closebtn {
+	  font-size: 30px;
+	}
+
 	.fp-img{
 		padding: 10%;
 	}
@@ -291,6 +307,14 @@ a.skip-to-main:focus{
 
 	a.skip-to-main:focus{
     	margin-top: 10%;
+	}
+
+	/*callouts*/
+	.callout {
+	  max-width: 300px;
+	}
+	.callout-header {
+	  font-size: 30px;
 	}
 
 	.fp-img{
