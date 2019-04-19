@@ -11,7 +11,9 @@ body{
 }
 
 nav{
-	display: block;
+	max-height: 0;
+  	overflow: hidden;
+  	transition: max-height 0.2s ease-out;
 	text-align: center;
 	font-size: 140%;
 	background-color: #fff5f5;
@@ -19,6 +21,7 @@ nav{
 
 nav li{
 	padding: 10px;
+	cursor: pointer;
 	background-color: #fff5f5;
 	border-bottom: solid #d60024;
 }
@@ -96,6 +99,22 @@ a.skip-to-main:focus{
   padding-top: 225px;
 }
 
+.accordion {
+  background-color: #d60024;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: 10px #9e001a solid;
+  text-align: center;
+  font-size: 140%;
+  transition: 0.4s;
+}
+
+.accordion .active {
+  background-color: #9e001a;
+}
+
 .fp-img{
 	display: block;
 	margin-left: auto;
@@ -134,6 +153,7 @@ a.skip-to-main:focus{
 
 @media only screen and (min-width: 768px) {
 	nav{
+		max-height: none;
 		font-size: 100%;
 		padding: 14px 0;
 		text-align: left;
@@ -172,6 +192,10 @@ a.skip-to-main:focus{
 
 	.sticky + h1 {
 	  padding-top: 125px;
+	}
+
+	.accordion {
+		display: none;
 	}
 
 	.fp-img{
