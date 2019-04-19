@@ -14,6 +14,7 @@ nav{
 	display: block;
 	text-align: center;
 	font-size: 140%;
+	background-color: #fff5f5;
 }
 
 nav li{
@@ -85,6 +86,16 @@ a.skip-to-main:focus{
 	color: #ffffff;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + h1 {
+  padding-top: 225px;
+}
+
 .fp-img{
 	display: block;
 	margin-left: auto;
@@ -124,7 +135,8 @@ a.skip-to-main:focus{
 @media only screen and (min-width: 768px) {
 	nav{
 		font-size: 100%;
-		margin-top: 30px;
+		padding: 14px 0;
+		text-align: left;
 	}
 
 	nav li{
@@ -156,6 +168,10 @@ a.skip-to-main:focus{
 
 	a.skip-to-main:focus{
     	margin-top: 10%;
+	}
+
+	.sticky + h1 {
+	  padding-top: 125px;
 	}
 
 	.fp-img{
@@ -193,7 +209,7 @@ a.skip-to-main:focus{
 
 	h1, h2, h3{
 		font-size: 100%;
-		padding: 7%;
+		padding: 5%;
 	}
 
 	main{
