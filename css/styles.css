@@ -123,7 +123,7 @@ a.skip-to-main:focus{
   margin-left: 20px;
   max-width: 300px;
   border: 2px solid #d60024;
-  /*animation: moveUp 3s;*/
+  animation: moveUp 3s;
 }
 .callout-header {
   padding: 25px 15px;
