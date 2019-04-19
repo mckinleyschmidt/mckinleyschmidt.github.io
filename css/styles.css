@@ -59,6 +59,24 @@ ol{
 	text-align: left;
 }
 
+form {
+	display: flex;
+	flex-direction: column;
+	max-width: 50%;
+	margin: auto;
+	background-color: #fff5f5;
+	padding: 10px;
+}
+label {
+	color: #d60024;
+}
+.error { 
+      color:red;
+      display:none;
+      padding: 2px;
+      background-image: none;
+}
+
 footer{
 	background-color: #d60024;
 	padding: 1%;
@@ -123,7 +141,7 @@ a.skip-to-main:focus{
   margin-left: 20px;
   max-width: 150px;
   border: 2px solid #d60024;
-  animation: moveUp 3s;
+  animation: moveUp 2s;
 }
 .callout-header {
   padding: 25px 15px;
@@ -189,6 +207,7 @@ a.skip-to-main:focus{
 	width: 80%;
 	padding: 2px;
 }
+
 
 /*/////////////////////////////////////////////////////////////////*/
 
