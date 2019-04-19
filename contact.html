@@ -48,7 +48,35 @@
 	  }
 
 	  return valid;
-    }  
+    } 
+
+    window.onscroll = function() {stickyNav()};
+
+		var nav = document.querySelector("nav");
+		var sticky = nav.offsetTop;
+
+		function stickyNav() {
+		  if (window.pageYOffset >= sticky) {
+		    nav.classList.add("sticky")
+		  } else {
+		    nav.classList.remove("sticky");
+		  }
+		}
+
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+		  acc[i].addEventListener("click", function() {
+		    this.classList.toggle("active");
+		    var nav = this.nextElementSibling;
+		    if (nav.style.maxHeight){
+		      nav.style.maxHeight = null;
+		    } else {
+		      nav.style.maxHeight = nav.scrollHeight + "px";
+		    } 
+		  });
+		} 
     </script>
 </head>
 <body>
